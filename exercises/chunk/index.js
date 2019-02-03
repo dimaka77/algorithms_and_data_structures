@@ -27,6 +27,7 @@ function chunk(array, size) {
     return chunked;
 }
 
+// Using slice
 // function chunk(array, size) {
 //     const chunked = [];
 //     let index = 0;
@@ -38,6 +39,17 @@ function chunk(array, size) {
 //         index+=size;
 //     }
 //     return chunked;
+// }
+
+// Using splice
+// function chunk(array, size) {
+//     let newArr = [...array];
+//     let arr = [];
+
+//     while (newArr.length) {
+//         arr.push(newArr.splice(0, size));
+//     }
+//     return arr;
 // }
 
 console.log(chunk([1, 2, 3, 4, 5], 2));
